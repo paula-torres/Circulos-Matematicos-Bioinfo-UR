@@ -1,4 +1,4 @@
-# Circulos Matemáticos-Bioinformatica
+<img width="1289" height="892" alt="image" src="https://github.com/user-attachments/assets/ca54c5cc-8015-4255-8a4d-1fe6d1c8e6b0" /># Circulos Matemáticos-Bioinformatica
 
 ## 1. El Caso:
 La madrugada del viernes, el Dr. Elías Navarro, un reconocido investigador genético, fue hallado sin vida en el cuarto frío del Instituto de Ciencias Biológicas. La escena mostraba signos claros de forcejeo: equipos volcados, gradillas en el suelo y marcas defensivas en los brazos de la víctima.
@@ -57,19 +57,48 @@ Nota del analista: Si la secuencia pertenece a un microorganismo o un animal de 
 
 Vamos a seleccionar solo las secuencias de humanos, para eso vamos a usar el comando `grep`
 
-## FASE 2: Alineamiento Múltiple (Cazando SNPs)
+```
+grep -A 1 "Evidencia_1" secuencia > secuencia_final.fasta
+grep -A 1 "Sospechoso" secuencias.fasta >> secuencia_final.fasta
+```
+
+## FASE 2: Alineamiento Múltiple
 
 Una vez aisladas las secuencias puramente humanas, debes buscar Polimorfismos de Nucleótido Único (SNPs). Las diferencias de una sola letra (mutaciones) pueden exculpar a un sospechoso.
 
-1. Ingresa a la herramienta de alineamiento MEGA y abre el archivo de nuestras secuencias.
-2. Va a aparecer un recuadro donde nos va a preguntar que queremos hacer con nuestras secuencias, le vamos a dar click en Align. 
-3. Posteriormente vamos a ir al recuadro donde dice align y seleccionamos muscle. Va a emepzar a alinear y ya tenemos nuestras secuencias organizadas!! 
+1. Movamos nuestro archivo a un lugar donde podamos usar nuestras secuencias:
+
+```
+cp secuencia_final.fasta /mnt/c/Users/../Desktop
+```
+
+2. Ingresa a la herramienta de alineamiento MEGA y abre el archivo de nuestras secuencias.
+
+![Mega](https://github.com/paula-torres/Circulos-Matematicos-Bioinfo-UR/blob/main/files/Captura%20de%20pantalla%202026-05-06%20120525.png)
+
+3. Va a aparecer un recuadro donde nos va a preguntar que queremos hacer con nuestras secuencias, le vamos a dar click en Align.
+
+![Mega2](https://github.com/paula-torres/Circulos-Matematicos-Bioinfo-UR/blob/main/files/Captura%20de%20pantalla%202026-05-06_mega2.png)
+
+4. Posteriormente vamos a seleccionaer el brazo con musculo (es el software de alineamiento) y damos la opcion Align DNA.
+
+![Mega3](https://github.com/paula-torres/Circulos-Matematicos-Bioinfo-UR/blob/main/files/Captura%20de%20pantalla%202026-05-06_mega3.png)
+
+Va a empezar a alinear y ya tenemos nuestras secuencias organizadas!! 
 
 ## FASE 3: Análisis Filogenético (El Clado del Asesino)
 El árbol filogenético agrupará las muestras por cercanía evolutiva y similitud directa.
 
-En la página de resultados de Clustal Omega, ve a la pestaña Phylogenetic Tree.
+1. Con nuestro alineamiento vamos a ir a la pestaña Data > Phylogenetic Analysis
+   
+![Flogenia1](https://github.com/paula-torres/Circulos-Matematicos-Bioinfo-UR/blob/main/files/Captura%20de%20pantalla%202026-05-06filogenia1.png)
 
-Observa qué sospechoso comparte la misma rama evolutiva (distancia cero) con el ADN recuperado de las uñas de la víctima.
+2. Damos ok y seleccionamos Tree > Construct/Test Maximum Likelihood Tree
 
-Veredicto: Según el árbol filogenético y el 100% de identidad en el alineamiento múltiple, ¿quién asesinó al Dr. Elías Navarro?
+![Flogenia2](https://github.com/paula-torres/Circulos-Matematicos-Bioinfo-UR/blob/main/files/Captura%20de%20pantalla%202026-05-06filogenia2.png)
+
+3. Listo tenemos nuestro árbol!! ¿Qué podemos interpretar? Observemos qué sospechoso comparte la misma rama evolutiva con el ADN recuperado de las uñas de la víctima.
+
+![Flogenia3](https://github.com/paula-torres/Circulos-Matematicos-Bioinfo-UR/blob/main/files/Captura%20de%20pantalla%202026-05-06filogenia3.png)
+
+Veredicto: Según el árbol filogenético y el alineamiento múltiple, ¿quién asesinó al Dr. Elías Navarro?
