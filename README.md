@@ -12,7 +12,7 @@ Tu Misión: Eres el bioinformático de la división de homicidios. Recibirás la
 **Misión: Determinar si alguno de los sospechosos coincide con la evidencia utilizando herramientas de de biología molecular y bioinformática!!**
 
 ## 2. Cadena de Custodia: Las Muestras
-En este [archivo]() encontrarás las secuencias de ADN recuperadas. Conoce su procedencia antes de analizarlas:
+En este [archivo](https://raw.githubusercontent.com/paula-torres/Circulos-Matematicos-Bioinfo-UR/refs/heads/main/files/secuencias_finales.fasta) encontrarás las secuencias de ADN recuperadas. Conoce su procedencia antes de analizarlas:
 
 ## Muestras de Interés Forense (ADN Mitocondrial HVR1)
 
