@@ -66,9 +66,11 @@ grep -A 1 "Sospechoso" secuencias_finales.fasta >> secuencia_final.fasta
 
 Una vez aisladas las secuencias puramente humanas, debes buscar Polimorfismos de Nucleótido Único (SNPs). Las diferencias de una sola letra (mutaciones) pueden exculpar a un sospechoso.
 
-1. Vamos a descargar nuestro [archivo](https://raw.githubusercontent.com/paula-torres/Circulos-Matematicos-Bioinfo-UR/refs/heads/main/files/secuencias_finales2.fasta)
+1. Vamos a descargar nuestro archivo:
+2.
+3. https://github.com/paula-torres/Circulos-Matematicos-Bioinfo-UR/blob/main/files/secuencias_finales2.fasta
 
-2. Ingresa a la herramienta de alineamiento MEGA y abre el archivo de nuestras secuencias.
+4. Ingresa a la herramienta de alineamiento MEGA y abre el archivo de nuestras secuencias.
 
 ![Mega](https://github.com/paula-torres/Circulos-Matematicos-Bioinfo-UR/blob/main/files/Captura%20de%20pantalla%202026-05-06%20120525.png)
 
