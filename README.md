@@ -58,8 +58,8 @@ Nota del analista: Si la secuencia pertenece a un microorganismo o un animal de 
 Vamos a seleccionar solo las secuencias de humanos, para eso vamos a usar el comando `grep`
 
 ```
-grep -A 1 "Evidencia_1" secuencia > secuencia_final.fasta
-grep -A 1 "Sospechoso" secuencias.fasta >> secuencia_final.fasta
+grep -A 1 "Evidencia_1" secuencias_finales.fasta > secuencia_final.fasta
+grep -A 1 "Sospechoso" secuencias_finales.fasta >> secuencia_final.fasta
 ```
 
 ## FASE 2: Alineamiento Múltiple
